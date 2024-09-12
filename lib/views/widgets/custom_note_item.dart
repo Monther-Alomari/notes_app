@@ -14,7 +14,7 @@ class NoteItem extends StatelessWidget {
         child: Column(crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ListTile(
-              title: Text(
+              title: const Text(
                 "Flutter tips",
                 style: TextStyle(color: Colors.black,fontSize: 26),
               ),
