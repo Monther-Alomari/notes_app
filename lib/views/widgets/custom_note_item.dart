@@ -6,39 +6,42 @@ class NoteItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container( padding: const EdgeInsets.only(top: 24,bottom: 24,left: 16),
-      decoration: BoxDecoration(
-          color: Colors.yellow, borderRadius: BorderRadius.circular(16)),
-      child: Column(crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          ListTile(
-            title: Text(
-              "Flutter tips",
-              style: TextStyle(color: Colors.black,fontSize: 26),
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 24),
+      child: Container( padding: const EdgeInsets.only(top: 24,bottom: 24,left: 16),
+        decoration: BoxDecoration(
+            color: Colors.yellow, borderRadius: BorderRadius.circular(16)),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            ListTile(
+              title: Text(
+                "Flutter tips",
+                style: TextStyle(color: Colors.black,fontSize: 26),
+              ),
+              subtitle: Padding(
+                padding: const EdgeInsets.only(top: 16,bottom: 16),
+                child: Text(
+                  " build your career with tharawat sami",
+                  style: TextStyle(color: Colors.black.withOpacity(0.4),fontSize: 20),
+                ),
+              ),
+              trailing: IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  FontAwesomeIcons.trash,
+                  color: Colors.black,size: 30,
+                ),
+              ),
             ),
-            subtitle: Padding(
-              padding: const EdgeInsets.only(top: 16,bottom: 16),
+            Padding(
+              padding: const EdgeInsets.only(right: 24),
               child: Text(
-                " build your career with tharawat sami",
-                style: TextStyle(color: Colors.black.withOpacity(0.4),fontSize: 20),
+                "may 21 , 2022 ",
+                style: TextStyle(color: Colors.black.withOpacity(0.4),fontSize: 16),
               ),
-            ),
-            trailing: IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                FontAwesomeIcons.trash,
-                color: Colors.black,size: 30,
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right: 24),
-            child: Text(
-              "may 21 , 2022 ",
-              style: TextStyle(color: Colors.black.withOpacity(0.4),fontSize: 16),
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }
