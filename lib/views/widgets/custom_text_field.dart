@@ -11,7 +11,7 @@ final int maxLines;
       cursorColor: kprimaryColor,
       maxLines: maxLines,
       decoration: InputDecoration(
-        hintText: hint,hintStyle: const TextStyle(color: kprimaryColor),
+        hintText: hint,
         border: buildBorder(),
         enabledBorder: buildBorder(),
         focusedBorder: buildBorder(kprimaryColor),
